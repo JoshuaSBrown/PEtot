@@ -1,0 +1,52 @@
+#Makefile for PEtot on IBM SP
+
+FC=mpxlf90_r
+LDR=mpxlf90_r 
+#FFLAGS = -q64 -g -C -qfixed
+FFLAGS = -q64 -O3 -qstrict -qarch=pwr5 -qtune=pwr5 -qfixed 
+F90FLAGS = $(FFLAGS) -c -qsuffix=f=f90 -qfree=f90
+LIB = $$LAPACK -lessl 
+
+EXEC_PETOT = PEtot_IBM_BP
+EXEC_PMOMENT = Pmoment_IBM
+
+system_time.o: system_time.ibm.f
+	$(FC) $(FFLAGS) -o system_time.o  -c system_time.ibm.f
+
+system_scfft.o: system_scfft.ibm.f
+	$(FC) $(FFLAGS) -o system_scfft.o -c system_scfft.ibm.f
+
+system_flush.o: system_flush.ibm.f
+	$(FC) $(FFLAGS) -o system_flush.o -c system_flush.ibm.f
+
+#system_czheev.o: system_czheev.scalapack.f
+#	$(FC) $(FFLAGS) -o system_czheev.o -c system_czheev.scalapack.f
+
+system_czheev.o: system_czheev.ibm.f
+	$(FC) $(FFLAGS) -o system_czheev.o -c system_czheev.ibm.f
+
+system_csfft.o: system_csfft.ibm.f
+	$(FC) $(FFLAGS) -o system_csfft.o -c system_csfft.ibm.f
+
+system_ccfft.o: system_ccfft.ibm.f
+	$(FC) $(FFLAGS) -o system_ccfft.o -c system_ccfft.ibm.f
+
+getewald.o: getewald.ibm.f
+	$(FC) $(FFLAGS) -o getewald.o -c getewald.ibm.f
+
+getewald2D.o: getewald2D.ibm.f
+	$(FC) $(FFLAGS) -o getewald2D.o -c getewald2D.ibm.f
+
+getvcoul.o: getvcoul.ibm.f
+	$(FC) $(FFLAGS) -o getvcoul.o -c getvcoul.ibm.f
+
+SRC_obj=\
+getvcoul.o\
+getewald2D.o\
+getewald.o\
+system_ccfft.o\
+system_csfft.o\
+system_czheev.o\
+system_flush.o\
+system_scfft.o\
+system_time.o

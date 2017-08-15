@@ -1,0 +1,16 @@
+ The original vwr.In has been changed (ghost states).  April 19, 2010, Lin-Wang Wang
+-----------------------------------
+ The Makefile for Cray XT5 for make Pseudopotential and Kpgen from ShuZhi Wang has been added. 
+ April 19, 2010, Lin-Wang Wang
+-----------------------------------
+ The forcLC2.f is changed in the PEtot_AllBand_BP3 directory for mpi_allreduce(fx,fx,...) to mpi_allreduce(fx,ftmp...). 
+ April 21, 2010, Lin-Wang Wang
+------------------------------------
+ The DOC_etot.input in DOC_FILES has been changed for icoul=21,22,23, into icoul=11,12,13. 
+ April 21, 2010, Lin-Wang Wang
+------------------------------------
+ Change Hpsi_comp_AllBandBP.f to Hpsi_comp_AllBandBP.f.memory, the original is in Hpsi_comp_AllBandBP.f.nblock. 
+ it uses a fixed memory and mblock to do d3fft_comp_block.f, 
+ May 24, 2010, Lin-Wang Wang
+
+

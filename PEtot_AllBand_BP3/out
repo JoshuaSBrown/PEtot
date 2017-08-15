@@ -1,0 +1,137 @@
+orthogonal_symm.f90:1.1:
+
+SUBROUTINE orthogonal(A,n_row,n_col)                                    
+ 1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:1.1:
+
+SUBROUTINE orthogonal(A,n_row,n_col)                                    
+ 1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:5.3:
+
+  USE fft_data                                                          
+   1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:5.3:
+
+  USE fft_data                                                          
+   1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:6.3:
+
+  USE load_data                                                         
+   1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:6.3:
+
+  USE load_data                                                         
+   1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:7.3:
+
+  USE DATA                                                              
+   1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:7.3:
+
+  USE DATA                                                              
+   1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:9.3:
+
+  IMPLICIT NONE                                                         
+   1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:9.3:
+
+  IMPLICIT NONE                                                         
+   1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:23.58:
+    Included at orthogonal_symm.f90:12:
+
+      common /mpi_data/inode,nnodes,inode_tot,nnodes_tot, &             
+                                                          1
+Error: Syntax error in COMMON statement at (1)
+param.escan_real_f90:24.10:
+    Included at orthogonal_symm.f90:12:
+
+          nnodes_k, nnodes_b, inode_k, inode_b,  &                      
+          1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:25.10:
+    Included at orthogonal_symm.f90:12:
+
+          icolor_k, icolor_b, ikey_k, ikey_b, icolor, ikey,  &          
+          1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:26.10:
+    Included at orthogonal_symm.f90:12:
+
+          num_group_k, num_group_b,   &                                 
+          1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:27.10:
+    Included at orthogonal_symm.f90:12:
+
+          MPI_COMM_K1, MPI_COMM_K2, MPI_COMM_B1, MPI_COMM_B2,  &        
+          1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:28.10:
+    Included at orthogonal_symm.f90:12:
+
+          MPI_COMM_K, MPI_COMM_N                                        
+          1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:31.55:
+    Included at orthogonal_symm.f90:12:
+
+      common /kpt_slda/kpt_slda_dis,kpt_dis,natom_dis, &                
+                                                       1
+Error: Syntax error in COMMON statement at (1)
+param.escan_real_f90:32.10:
+    Included at orthogonal_symm.f90:12:
+
+          nblock_band_mx, nblock_band, band_dis                         
+          1
+Error: Unclassifiable statement at (1)
+param.escan_real_f90:34.49:
+    Included at orthogonal_symm.f90:12:
+
+       common /com123/n1,n2,n3,nr,nr_n,mx,natom, &                      
+                                                 1
+Error: Syntax error in COMMON statement at (1)
+param.escan_real_f90:35.6:
+    Included at orthogonal_symm.f90:12:
+
+      n1L,n2L,n3L,nrL,nr_nL,n1L2,n2L2,n3L2,nrL2,nr_nL2                  
+      1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:14.3:
+
+  INTEGER, INTENT(in) :: n_row, n_col                                   
+   1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:14.3:
+
+  INTEGER, INTENT(in) :: n_row, n_col                                   
+   1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:15.3:
+
+  DOUBLE COMPLEX, DIMENSION(n_row,n_col) :: A                           
+   1
+Error: Non-numeric character in statement label at (1)
+orthogonal_symm.f90:15.3:
+
+  DOUBLE COMPLEX, DIMENSION(n_row,n_col) :: A                           
+   1
+Error: Unclassifiable statement at (1)
+orthogonal_symm.f90:17.3:
+
+  DOUBLE COMPLEX, DIMENSION(n_row,n_col) :: A_tmp                       
+   1
+Error: Non-numeric character in statement label at (1)
+Fatal Error: Error count reached limit of 25.
+make: *** [orthogonal_symm.o] Error 1

@@ -1,0 +1,18 @@
+Requires that LAPACK be installed
+
+ERROR with line 409 in 
+DIIS_comp.f
+
+looks like the d is used to indicate a debug line for some reason the compiler is complaining about it
+
+so I just commented the line out
+
+Second consideration is the LAPACK env variable which has not been set
+-llapack if std install
+
+Need blas library for dgem algorithm
+-lblas
+
+Apparently if using blas and lapack still hit errors because the code relies on functions that are only available on essl a scientific package for IBM computers
+
+ 
